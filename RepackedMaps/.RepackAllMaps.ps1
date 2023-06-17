@@ -22,7 +22,7 @@ function Invoke-Repack() {
 
 	# Repackage all maps
 	$foundFiles | ForEach-Object {
-		Invoke-Expression "..\.\bspzip.exe -game `"..\..\tf\`" -repack `"$_`"" # Run Valve's repackaging command with the path of the found file
+		Invoke-Expression "..\.\bspzip.exe -repack `"$_`"" # Run Valve's repackaging command with the path of the found file
 	}
 
 	# Show that export process was completed
