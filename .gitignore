@@ -1,0 +1,7 @@
+# Ignore all files by default
+*.*
+
+# But do not ignore:
+!.gitignore
+!readme.md
+!.RepackAllMaps.ps1
