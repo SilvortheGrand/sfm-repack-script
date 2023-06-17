@@ -5,8 +5,6 @@ function Invoke-Repack() {
 	# If there's no files, we inform the user and cancel
 	if ($foundFiles.Length -eq 0) {
 		Write-Host "No maps were found in $(Get-Location)! Are you sure you're running this in the right place?"
-		Write-Host "Press ENTER to close..."
-		Read-Host
 		return
 	}
 
@@ -19,8 +17,6 @@ function Invoke-Repack() {
 	# Ask for user permission to start repackaging
 	if(Read-Host "That's $($foundFiles.Length) maps, the process will take some time. Do you want to proceed? Y/n" -eq "n") {
 		Write-Host "Repackaging cancelled."
-		Write-Host "Press ENTER to close..."
-		Read-Host
 		return
 	}
 
@@ -31,8 +27,8 @@ function Invoke-Repack() {
 
 	# Show that export process was completed
 	Write-Host -ForegroundColor green "Repacking complete!"
-	Write-Host "Press ENTER to close..."
-	Read-Host
 }
 
 Invoke-Repack
+Write-Host "Press ENTER to close..."
+Read-Host
