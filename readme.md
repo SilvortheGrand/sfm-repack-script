@@ -6,3 +6,6 @@ All you've got to do is paste the contents of the zip into the `Team Fortress 2/
 
 ### Batch exporting
 After installing, there should now be a folder called `RepackagedMaps` and inside of that is a file called `.RepackAllMaps.ps1`. Copy all the maps you want to repack into this folder. You can then right click on the script and select `Run with PowerShell`.
+
+### Troubleshooting
+Consult the [guide](https://steamcommunity.com/sharedfiles/filedetails/?id=480267373) I used as a basis for this script. It contains a section about troubleshooting that you should adhere to.
