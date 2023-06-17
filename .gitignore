@@ -4,4 +4,5 @@
 # But do not ignore:
 !.gitignore
 !readme.md
+!download.png
 !.RepackAllMaps.ps1
